@@ -2,6 +2,10 @@
 
 - xv6 source : <https://github.com/mit-pdos/xv6-public>
 - How to add system call : <http://stackoverflow.com/questions/8021774/how-do-i-add-a-system-call-utility-in-xv6>
+- Installing qemu : <http://wiki.qemu.org/Hosts/Linux>
+- Installing qemu : <http://askubuntu.com/questions/138140/how-do-i-install-qemu>
+- Running and Debugging xv6 on qemu : <http://zoo.cs.yale.edu/classes/cs422/2010/lec/l2-hw>
+- Running xv6 on qemu : <http://ubuntuforums.org/showthread.php?t=2127846>
 
 ###Question 1
 
