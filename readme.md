@@ -1,4 +1,4 @@
-#xv6 Assignment
+# xv6 Assignment
 
 - xv6 source : <https://github.com/mit-pdos/xv6-public>
 - How to add system call : <http://stackoverflow.com/questions/8021774/how-do-i-add-a-system-call-utility-in-xv6>
@@ -7,7 +7,7 @@
 - Running and Debugging xv6 on qemu : <http://zoo.cs.yale.edu/classes/cs422/2010/lec/l2-hw>
 - Running xv6 on qemu : <http://ubuntuforums.org/showthread.php?t=2127846>
 
-###Question 1
+### Question 1
 
 Here we try to create a basic `system-call` that can be used when you try to implement your scheduler functions. 
 
@@ -22,7 +22,7 @@ The two arguments are pointers to integers to which waitx will assign the total 
 Create a test program which utilises the waitx system-call by creating a
 `time` like command for the same.
 
-###Question 2 - To Be Done
+### Question 2 - To Be Done
 
 Now that you know how to add system-calls to Xv6, lets extend the idea. `Replace` the `current` `round robin scheduler` for Xv6 and replace it with a `priority based scheduler`. A priority based scheduler selects the process
 with highest priority for execution. In case two or more processes have same priority, we choose them in a round robin fashion. The `priority` of a process can be in the `range [0,100]`, smaller value will represent higher priority. Set the `default priority` of a process as `60`. To change the default priority add a new `system-call` `set_priority` which can change the priority of a process.
@@ -35,7 +35,7 @@ The system-call returns the old-priority value of the process. In case the the p
 
 Make a report which includes a small example and a comparison of your current (priority based) scheduling policy and round robin approach.
 
-###Question 3 - To Be Done
+### Question 3 - To Be Done
 
 - Implement a `lottery based scheduler` for Xv6. The idea 	behind a lottery based scheduler is simple : Assign 	each running process a slice of the processor based in 	proportion to the `number of tickets` it has; the more
 	tickets a process has, the more it runs. Each time slice, a randomized lottery determines the winner of the lottery; that winning process is the one that runs for that time slice. For this the following system call:
@@ -65,7 +65,7 @@ Make a report which includes a small example and a comparison of your current (p
 
 	***Output :*** Output the results in the form of a report for a small example which demonstrates the correct working of the scheduler. Utilise the output of `waitx` system-call, and report the average turn-around time for each of the process.
 
-###General Comments:
+### General Comments:
 
 1. In order to test your scheduler, try to create small code examples which forks a new process and assigns a unique number to each process created. For every process with say `unique_id % 3 == x` (can have some
 value) , do a I/O intensive job, or decrement the nice value , or increase the priority. The type of jobs that you decide to do in each process should be fairly simple so that you can easily derive conclusions from them.
