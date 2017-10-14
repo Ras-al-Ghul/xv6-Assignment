@@ -1,4 +1,4 @@
-# 'waitx` System Call
+# `waitx` System Call
 
 - The files which were modified are in the `modified files` directory.
 - Replace the original files in the xv6 source with these files, `make` and then run in `qemu`
